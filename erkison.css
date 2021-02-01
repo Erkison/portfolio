@@ -9,73 +9,37 @@
     --my-yellow: #F3DBCF;
 }
 body {
-	margin: 0;
-}
-.my_navbar {
     margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-height: 50px;
+    font-family: var(--my-font);
+}
+.navbar {
     background: var(--my-peach);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    z-index: 10;
-    }
-.my_navbar ul {
-    color: var(--my-white);
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    list-style: none;
-    display: flex;
-    margin-right: 2rem;
-    }
-    
-.my_navbar ul li {
-    font-family: var(--my-font);
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 1;
-    color: var(--my-white);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    }
-    
-.my_navbar ul li a {
-    font-family: var(--my-font);
-    font-size: 20px;
-    font-weight: 200;
-    line-height: 1;
-    list-style: none;
-    margin: 0;
-    box-sizing: inherit;
-    text-decoration: none;
-    color: var(--my-white);
-    display: inline-block;
-    background: var(--my-gray);
-    text-align: center;
-    padding: 14px 16px;
 }
-.my_navbar ul li a:hover {
+.navbar div ul {
+    color: var(--my-white);
+}
+
+.navbar-brand, .nav-link {
+    text-decoration: none;
+    color: black;
+}
+.navbar div ul li {
+    font-family: var(--my-font);
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1;
+    color: var(--my-white);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    }
+
+.navbar div ul li a:hover {
     background-color: var(--my-yellow);
     color: var(--my-gray)
 }
-.my_navbar ul li a.icon {
-    display: none;
-}
-@media screen and (max-width: 760px) {
-	.my_navbar ul li a {display: none;}
-	.my_navbar ul li a.icon {display:block;}
-    .my_navbar.responsive ul li a.icon {right: 0; top: 0;}
-    .my_navbar.responsive ul li a {display: block;text-align: left;}
-}
+
 
 #welcome-section {
     margin: auto;
